@@ -5,7 +5,7 @@ RUN apt-get update -y
 RUN apt-get install gunicorn -y
 
 COPY requirements.txt requirements.txt
-COPY FLASKAPP /opt/
+COPY flaskapp /opt/
 
 RUN pip install -r requirements.txt
 WORKDIR /opt/
