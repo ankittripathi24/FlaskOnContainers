@@ -3,6 +3,7 @@ MAINTAINER ankittripathi2402@gmail.com
 
 RUN apt-get update -y
 RUN apt-get install gunicorn -y
+RUN apt install python3-pip -y
 
 COPY flaskapp/requirements.txt requirements.txt
 COPY flaskapp /opt/
