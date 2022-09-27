@@ -13,6 +13,8 @@ echo \
   
 sudo apt-get update
 
+sudo snap install docker
+
 docker --version
 
 sudo docker run hello-world
